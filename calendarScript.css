@@ -1,0 +1,51 @@
+body {
+    background-color: #f1f7fd;
+}
+h1 {
+    text-align: center;
+}
+h4 {
+    text-align: center;
+}
+p {
+    font-family:"Times New Roman";
+    font-size: 15px
+    padding-left: 25px;    
+}
+
+label {
+   display: inline-block;
+   vertical-align: baseline;
+    width: 100px
+}
+
+#calendar{
+  width: 130px;
+  height: 180px;
+  background-color: #f1f7fd;
+  border-radius: 5%;
+  box-shadow: 0 4px 4px 0 rgba(50, 50, 50, 0.4);
+}
+
+# calendar>p{
+  padding: 10px 0;
+  margin: 0;
+  text-align: center;
+}
+
+#calendar-day{
+  font-size: 16px;
+}
+
+#calendar-month-year{
+ font-size: 14px;
+}
+
+#calendar-date{
+  font-size: 64px;
+  padding-top: 10px;
+  padding-bottom: 0;
+}
+
+
+
