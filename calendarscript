@@ -1,0 +1,28 @@
+document.forms.frmDohaEvents
+//my attempt at form validation
+function validateForm() {
+    var eventName = document.forms["frmDohaEvents"]["eventName"].value;
+    if (eventName == null || eventName == " ") {
+        alert("You must give your event a name!");
+        return false;
+    }
+}
+
+//a function to get today's date
+function calendar() {
+  var day=["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+  var month=["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "Novmeber", "December"];
+  var d= new Date();
+  setText('calendar-day', day[d.getDay()]);
+  setText('calendar-date', d.getDate());
+  setText('calendar-month-year', month[d.getMonth()]+' '+(1900+d.getYear()));
+};
+//a function to set the value of <p> tags
+function setText(id,val) {
+  if(val < 10) {
+    val = '0' +val; //to keep uniform 2 digit dates
+  }
+  document.getElementById(id).innerhtml = val;
+};
+window.onload = calendar;
+
