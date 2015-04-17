@@ -1,0 +1,38 @@
+<!DOCTYPE/>
+<head>
+    <script type="text/javascript" src="calendarscript.js"></script>
+    <link rel="stylesheet" type="text/css" href="calenderScript.css"/>
+<h1>Doha Events Calendar</h1>
+<h4>Add your event to the calendar</h4>
+<body>
+<div id="eventFrm">
+  <form id="frmDohaEvents" name="frmDohaEvents" method="post" action="thanks.htm" onsubmit="return validateForm()">
+  <p> 
+      <label for="eventName">Event Name:</label><input type="text" name="eventName" tabindex="100"/>
+  </p>
+  <p>    
+      <label for="eventDate">Date:</label><input type="date" name="eventDate"/>
+  </p> 
+  <p>    
+      <label for="time">Time:</label><input type="time" name="eventTime"/>
+  </p> 
+  
+  <p>
+      <label for="eventLocation">Location:</label><input type="text" name="eventLocation"/>
+  </p>
+  <p>
+      <label for="eventURL">Event Url:</label><input type="url" name="eventUrl"/>
+  </p>    
+  <p>    
+  <button type="submit">Submit</button>
+  </p>  
+        
+</form> 
+</div> 
+<div id="calendar">
+  <p id="calendar-day"></p>
+  <p id="calendar-date"></p>
+  <p id="calendar-month-year"></p>
+  </div>
+</body>    
+    
