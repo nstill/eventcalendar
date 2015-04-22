@@ -1,0 +1,73 @@
+<!--
+DOCTYPE tells browser the version of html.
+The new standard is below.
+-->
+<!DOCTYPE html>
+<html>
+	<head>
+<!--
+The head tag contains info about the page.
+Put links to stylesheets and the page title here.
+-->
+		<title>
+			Event Calendar
+		</title>
+		<link rel="stylesheet" type="text/css" href="calenderScript.css"/>
+		<meta charset="utf-8">
+	</head>
+	<body>
+<!--
+Put your html here.
+-->
+		<form name="eventCalendar" onSubmit="addEvent()">
+			<p>
+			<label for="eventName">
+				Event Name
+			</label>
+			<input id="event-name" type="text" name="eventName" required/>
+			</p>
+
+			<p>
+			<label for="eventDate"> 
+				Event Date
+			</label>
+			<input id="event-date" type="date" name="eventDate" required/>
+			</p>
+
+			<p>
+			<label for="eventTime">
+				Event Time
+			</label>
+			<input id="event-time" type="time" name="eventTime" required/>
+			</p>
+
+
+			<p>
+			<label for="eventLocation">
+				Event Location
+			</label>
+			<input id="event-location" type="text" name="eventLocation" required/>
+			</p>
+
+			<p>
+			<label for="eventURL">
+				Event URL
+			</label>
+			<input id="event-url" type="text" name="eventURL"/>
+			</p>
+
+			<p>
+			<button type="submit">
+				Add Event
+			</button>
+			</p>
+		</form>
+<!--
+The standard is to put your script tags at the bottom of the body.
+Script tags tell the browser to fetch the JS file.
+Your website will stop loading until the JS file is downloaded.
+There is an even newer convention but let's stick with this one. 
+-->
+	<script type="text/javascript" src="calendar.js"></script>
+	</body>
+</html>
